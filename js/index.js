@@ -42,8 +42,10 @@ nav2.addEventListener('mouseover', (Event) => {
         Event.target.style.backgroundColor = 'red';
         });
 
-const selectAll = document.getElementsByClassName('.container-home');
 
-selectAll.addEventListener('scroll', (Event) => {
-    Event.target.scroll() (0%; 1200; smooth);
-});
+const windowObj = window;
+
+const load = () => {
+    alert('Fun Bus has Loaded!');
+};
+window.onload = load;
