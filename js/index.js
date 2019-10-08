@@ -6,9 +6,22 @@ const nav2 = document.getElementsByClassName('nav-link').item(2);
 
 const nav3 = document.getElementsByClassName('nav-link').item(3);
 
+
 nav.addEventListener('click', (Event) => {
     Event.target.style.backgroundColor = 'green';
 });
+
+const textarea = document.querySelector('textarea');
+
+textarea.onselect = (event) => {
+    const selection = (event.target.value.substring(event.target.selectionStart, event.target.selectionEnd));
+   let newSelection =  `You selected: ${selection}!`;
+
+   console.log(newSelection);
+};
+
+
+
 
 nav1.addEventListener('click', (Event) => {
     Event.target.style.backgroundColor = 'green';
