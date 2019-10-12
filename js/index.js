@@ -84,13 +84,17 @@ nav3.addEventListener('onmouseover', (Event) => {
 const windowObj = window;
 
 const load = () => {
-    console.log('Fun Bus has Loaded!');
+    alert('Fun Bus has Loaded!');
 };
 window.onload = load;
 
+
+
 const navAll = document.querySelectorAll('nav');
 
-navAll.addEventListener('click', (Event) => {
+navAll.forEach(e => {
+    e.addEventListener('click', (Event) => {
 
-    Event.preventDefault();
+        Event.preventDefault();
+    })
 });
